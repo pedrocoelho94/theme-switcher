@@ -1,5 +1,5 @@
-import { useContext } from 'react'
 import * as S from './styles'
+import { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
 import { shade } from 'polished'
 

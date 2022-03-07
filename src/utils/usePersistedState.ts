@@ -5,6 +5,7 @@ type Response<T> = [T, Dispatch<SetStateAction<T>>]
 
 function usePersistedState<T>(key: string, initialState: any): Response<T> {
   const { getItem } = useStorage()
+  
   const [state, setState] = useState(() => {
     const storageValue = getItem('theme', 'local')
 
